@@ -577,11 +577,12 @@ footer {
 
 .timeline-content {
     padding: 20px;
-    background: var(--beige-medium);
+    background: #ffffff; /* improved contrast */
     border-radius: 8px;
     box-shadow: var(--shadow-light);
     position: relative;
     transition: var(--transition-standard);
+    border: 1px solid rgba(0,0,0,0.06);
 }
 
 .timeline-content:hover {
@@ -597,14 +598,16 @@ footer {
 
 .timeline-title {
     font-size: 1.4rem;
-    color: var(--text-dark);
+    color: #0f172a; /* darker for contrast */
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .timeline-company {
     font-size: 1.1rem;
-    color: var(--accent-blue);
+    color: #0d3b66; /* stronger blue for readability */
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .timeline-description {
