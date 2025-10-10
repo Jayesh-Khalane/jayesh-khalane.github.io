@@ -127,3 +127,13 @@ window.addEventListener('scroll', () => {
 // (removed) JS hover effect for .social-link (CSS :hover already provides interaction)
 
 // (removed) Initialize dynamic loaders
+
+// Last updated date - set from local system date on load
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('last-updated');
+    if (el) {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        el.textContent = now.toLocaleDateString(undefined, options);
+    }
+});
