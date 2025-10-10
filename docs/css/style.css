@@ -501,60 +501,15 @@ footer {
         padding: 1rem;
     }
     
-    /* Main blog page responsiveness */
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .blog-card {
-        margin-bottom: 1.5rem;
-    }
-    
-    .blog-excerpt {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
+    /* (removed) Blog responsiveness - no blog components in current pages */
 }
 
 /* Small mobile devices */
 @media (max-width: 480px) {
-    .blog-title {
-        font-size: 1.5rem !important;
-    }
-    
-    .blog-content {
-        font-size: 0.95rem;
-    }
-    
-    .interaction-btn {
-        padding: 0.5rem 0.8rem;
-    }
-    
-    .blog-card .blog-image {
-        height: 180px;
-    }
-    
-    .read-more {
-        width: 100%;
-        text-align: center;
-    }
+    /* (removed) Blog-specific styles - not used */
 }
 
-/* Loading Animation */
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
+/* (removed) Loading overlay - no .loading element */
 
 /* Last updated section */
 .last-updated {
@@ -706,10 +661,7 @@ footer {
     color: var(--beige-light);
 }
 
-/* Certificate Carousel */
-.cert-carousel-container {
-    animation: rotate 15s infinite linear;
-}
+/* (removed) Certificate carousel - not used */
 
 /* Project Tags */
 .project-tags {

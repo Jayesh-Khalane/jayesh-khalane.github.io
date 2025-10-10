@@ -107,70 +107,13 @@ window.addEventListener('scroll', () => {
 });
 
 // Loading animation
-window.addEventListener('load', () => {
-    const loader = document.querySelector('.loading');
-    if (loader) {
-        loader.style.opacity = '0';
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 500);
-    }
-});
+// (removed) Loading animation - no .loading element in DOM
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// (removed) Smooth scrolling for in-page anchors - no hash anchors used
 
-// Load certificates dynamically
-const certGrid = document.querySelector('.cert-grid');
-const certificatesPath = '../assets/certificate/';
+// (removed) Dynamic certificate loader - not used by current pages
 
-// Function to load certificates
-async function loadCertificates() {
-    try {
-        // This is a placeholder - you'll need to implement the actual loading of certificates
-        const certificates = [
-            { title: 'Certificate 1', image: 'cert1.jpg' },
-            { title: 'Certificate 2', image: 'cert2.jpg' },
-            // Add more certificates as needed
-        ];
-
-        certificates.forEach(cert => {
-            const certCard = document.createElement('div');
-            certCard.className = 'cert-card';
-            certCard.innerHTML = `
-                <img src="${certificatesPath}${cert.image}" alt="${cert.title}">
-                <h3>${cert.title}</h3>
-            `;
-            certGrid.appendChild(certCard);
-        });
-    } catch (error) {
-        console.error('Error loading certificates:', error);
-    }
-}
-
-// Handle contact form submission
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Here you would typically send this data to a server
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
-});
+// (removed) Contact form handler - no #contact-form element present
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
@@ -181,18 +124,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add hover effect to social links
-document.querySelectorAll('.social-link').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        link.style.transform = 'translateX(10px)';
-    });
-    
-    link.addEventListener('mouseleave', () => {
-        link.style.transform = 'translateX(0)';
-    });
-});
+// (removed) JS hover effect for .social-link (CSS :hover already provides interaction)
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    loadCertificates();
-});
+// (removed) Initialize dynamic loaders
