@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Jayesh Khalane</title>
+    <meta name="description" content="Research notes and project updates from Jayesh Khalane on computer vision, robotics, satellite pose estimation, and 3D reconstruction.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="page-background"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">Home</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="certifications.html">Certificates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <h2 class="page-title" data-aos="fade-down">Blog</h2>
+        <p class="section-intro" data-aos="fade-up">Research notes, project logs, and engineering reflections from my work in robotics, computer vision, and space systems.</p>
+
+        <article id="lidar-to-space" class="blog-article" data-aos="fade-up">
+            <div class="blog-meta">Research Notes | Jan 2026</div>
+            <h3>From LiDAR Swarms to Space Robotics</h3>
+            <p>My research path has moved from TurtleBot swarm perception to satellite pose estimation, but the core question is familiar: how can a system make useful decisions with limited, noisy, and local information?</p>
+            <p>At IIT Bombay, my swarm work used 2D LiDAR data to identify neighboring robots and obstacles without relying on localization or direct communication. The same discipline of extracting reliable state from constrained sensing now informs my fellowship work on cooperative and non-cooperative satellite 6 DOF pose estimation.</p>
+            <ul>
+                <li>Model the observable state before choosing the algorithm.</li>
+                <li>Keep perception outputs useful for downstream control.</li>
+                <li>Prefer practical robustness over unnecessary model complexity.</li>
+            </ul>
+        </article>
+
+        <article id="satellite-3d" class="blog-article" data-aos="fade-up">
+            <div class="blog-meta">Project Log | 2026</div>
+            <h3>Improving Satellite 3D Reconstruction</h3>
+            <p>My capstone focuses on learning-based methods for large-scale 3D reconstruction from satellite imagery. The project compares classical multi-view geometry with newer neural and point-based representations such as NeRF, MVS-Net, Gaussian Splatting, and SV-Raster.</p>
+            <p>A key engineering goal is improving the existing COLMAP pipeline so reconstructions are cleaner and less noisy before learning-based stages are applied. That makes the output easier to inspect, compare, and refine.</p>
+            <ul>
+                <li>Use COLMAP as a strong geometry baseline.</li>
+                <li>Benchmark learning-based methods on reconstruction quality and stability.</li>
+                <li>Document pipeline changes so experiments can be repeated.</li>
+            </ul>
+        </article>
+
+        <article id="fpga-robotics" class="blog-article" data-aos="fade-up">
+            <div class="blog-meta">Build Notes | 2024</div>
+            <h3>What Astro-Tinker Bot Taught Me</h3>
+            <p>Leading the Astro-Tinker Bot project for eYRC pushed me into the full stack of embedded robotics: processor design, Verilog simulation, UART communication, PWM generation, line following, and pick-and-place control.</p>
+            <p>The biggest lesson was that a robot is only as reliable as the interfaces between its subsystems. Clean timing, predictable communication, and careful debugging mattered as much as the main algorithm.</p>
+        </article>
+    </main>
+
+    <a href="../index.html" class="back-btn" data-aos="fade-up">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

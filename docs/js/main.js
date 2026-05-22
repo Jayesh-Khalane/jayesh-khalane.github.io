@@ -38,10 +38,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 const typewriterText = document.getElementById('typewriter-text');
 if (typewriterText) {
     const phrases = [
-        'Academic Researcher',
-        'Trust me, I am an Engineer : )',
-        'Technology Enthusiast',
-        'Innovation Driven'
+        'Research Fellow at IIT Bombay',
+        'Computer Vision and Robotics',
+        'Satellite 3D Reconstruction',
+        'Trust me, I am an Engineer : )'
     ];
 
     let phraseIndex = 0;
