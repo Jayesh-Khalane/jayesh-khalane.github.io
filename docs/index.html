@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <div class="page-background"></div>
     
     <!-- Navigation -->
@@ -28,9 +29,12 @@
             <ul class="nav-links">
                 <li><a href="pages/experience.html">Experience</a></li>
                 <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
                 <li><a href="pages/certifications.html">Certificates</a></li>
+                <li><a href="pages/blog.html">Extra</a></li>
             </ul>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
@@ -42,7 +46,7 @@
                     <img src="assets/Images/jay2.jpg" alt="Jay's Photo" loading="lazy">
                 </div>
                 <div class="social-links">
-                    <div class="icon-links" style="display: flex; justify-content: center; margin-bottom: 1.5rem; gap: 0.8rem;">
+                    <div class="icon-links">
                         <a href="https://github.com/Jayesh-Khalane" class="icon-link" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="100">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
@@ -64,12 +68,37 @@
                 </div>
             </div>
             <div class="intro-content" data-aos="fade-left">
-                <h1>Hi, I'm Jayesh Khalane</h1>
+                <div class="hero-kicker">BTech Information Technology</div>
+                <h1>Hi, I'm <span>Jayesh Khalane</span></h1>
                 <div class="typewriter">
                     <p class="tagline" id="typewriter-text"></p>
                 </div>
                 <div class="about-content">
-                    <p>I am a B.Tech Information Technology student and research fellow at IIT Bombay's Laboratory for Aeromechanical Autonomy. My work spans computer vision, robotics, satellite 6 DOF pose estimation, torque control for space manipulators, and learning-based 3D reconstruction from satellite imagery.</p>
+                    <p>I build robotics and computer vision things, break them, debug them at 2 AM, and then pretend it was all part of the learning curve.</p>
+                </div>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+                    <a href="pages/projects.html" class="primary-action">
+                        <i class="fas fa-rocket"></i>
+                        <span>Explore Work</span>
+                    </a>
+                    <a href="pages/blog.html" class="secondary-action">
+                        <i class="fas fa-pen-nib"></i>
+                        <span>Extra</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <strong>CV</strong>
+                        <span>Computer vision</span>
+                    </div>
+                    <div>
+                        <strong>DL</strong>
+                        <span>Deep learning</span>
+                    </div>
+                    <div class="math-stat">
+                        <strong>lim<sub>curiosity &rarr; &infin;</sub> curious(everything)</strong>
+                        <span>Curious</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,19 +106,14 @@
 
     <section class="blog-preview">
         <div class="page-container">
+            <div class="section-chip" data-aos="fade-down">Fresh drops</div>
             <h2 data-aos="fade-down">Latest Writing</h2>
             <div class="blog-grid">
                 <article class="blog-card" data-aos="fade-up">
-                    <div class="blog-meta">Research Notes</div>
-                    <h3>From LiDAR Swarms to Space Robotics</h3>
-                    <p>A short look at how multi-agent perception, pose estimation, and control problems connect across ground robots and satellite systems.</p>
-                    <a href="pages/blog.html#lidar-to-space" class="project-link">Read post <i class="fas fa-arrow-right"></i></a>
-                </article>
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-meta">Project Log</div>
-                    <h3>Improving Satellite 3D Reconstruction</h3>
-                    <p>Notes from the capstone work on COLMAP, NeRF, MVS-Net, Gaussian Splatting, and cleaner reconstruction pipelines.</p>
-                    <a href="pages/blog.html#satellite-3d" class="project-link">Read post <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-meta">Thought Experiment</div>
+                    <h3>Is everything a function?</h3>
+                    <p>A playful essay about functions, cookies, optimization, experience, and why life might be more cookie-shaped than it looks.</p>
+                    <a href="pages/blog-function.html" class="project-link">Read post <i class="fas fa-arrow-right"></i></a>
                 </article>
             </div>
         </div>

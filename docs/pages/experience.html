@@ -181,6 +181,7 @@
     </style>
 </head>
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <div class="page-background"></div>
     
     <!-- Navigation -->
@@ -197,17 +198,22 @@
             <ul class="nav-links">
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="certifications.html">Certificates</a></li>
+                <li><a href="blog.html">Extra</a></li>
             </ul>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
     <main class="page-container">
+        <div class="section-chip" data-aos="fade-down">Field notes</div>
         <h2 class="page-title" data-aos="fade-down">Experience</h2>
-        <div class="timeline">
+        <p class="section-intro" data-aos="fade-up">A chronological path through research, international training, and robotics work.</p>
+        <div class="timeline genz-track">
 
-            <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-item left" data-step="01" data-aos="fade-right">
                 <div class="timeline-content">
                     <div class="timeline-date">Jan 2026 - Present</div>
                     <h3 class="timeline-title">Research Fellow</h3>
@@ -222,7 +228,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-item right" data-step="02" data-aos="fade-left">
                 <div class="timeline-content">
                     <div class="timeline-date">June 2025 - Aug 2025</div>
                     <h3 class="timeline-title">Technical University of Berlin, Germany</h3>
@@ -237,7 +243,7 @@
             </div>
 
 
-            <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-item left" data-step="03" data-aos="fade-right">
                 <div class="timeline-content">
                     <div class="timeline-date">May 2024 - July 2024</div>
                     <h3 class="timeline-title">Research Intern</h3>
@@ -254,7 +260,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-item right" data-step="04" data-aos="fade-left">
                 <div class="timeline-content">
                     <div class="timeline-date">Sep 2023 - Aug 2024</div>
                     <h3 class="timeline-title">Programming Member</h3>
@@ -277,12 +283,6 @@
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 </html> 

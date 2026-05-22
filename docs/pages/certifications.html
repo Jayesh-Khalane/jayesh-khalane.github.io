@@ -191,6 +191,7 @@
     </style>
 </head>
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <div class="page-background"></div>
     
     <!-- Navigation -->
@@ -207,21 +208,24 @@
             <ul class="nav-links">
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="certifications.html">Certificates</a></li>
+                <li><a href="blog.html">Extra</a></li>
             </ul>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
-    <div class="certs-container">
-        <h2 data-aos="fade-down" style="text-align: center; margin-bottom: 3rem;">Certifications</h2>
-        <p data-aos="fade-up" style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--text-dark);">
-        </p>
+    <main class="page-container certs-page">
+        <div class="section-chip" data-aos="fade-down">Proof wall</div>
+        <h2 class="page-title" data-aos="fade-down">Certifications</h2>
+        <p class="section-intro" data-aos="fade-up">Certificates grouped by category, with each tile carrying the date, issuer, and proof link.</p>
         
-        <div class="cert-list">
+        <div class="cert-list cert-board">
             <h3 class="cert-category" data-aos="fade-right">Internship Certificates</h3>
             
-            <div class="cert-item" data-aos="fade-up">
+            <div class="cert-item" data-badge="01" data-aos="fade-up">
                 <div class="cert-info">
                     <div class="cert-date">Summer 2024</div>
                     <h3 class="cert-title">Research Internship  </h3>
@@ -239,7 +243,7 @@
 
             <h3 class="cert-category" data-aos="fade-right">Miscellaneous Certificates</h3>
             
-            <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-item" data-badge="02" data-aos="fade-up" data-aos-delay="100">
                 <div class="cert-info">
                     <div class="cert-date">2023-2024</div>
                     <h3 class="cert-title">eYRC Astro-Tinker Bot</h3> 
@@ -253,7 +257,7 @@
                     </a>
                 </div>
             </div>
-            <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-item" data-badge="03" data-aos="fade-up" data-aos-delay="100">
                 <div class="cert-info">
                     <div class="cert-date">2025</div>
                     <h3 class="cert-title">Susntainable Complex Design Integrating Industry 4.0</h3> 
@@ -274,7 +278,7 @@
 
             <h3 class="cert-category" data-aos="fade-right">Technical Certifications</h3>
             
-            <div class="cert-item" data-aos="fade-up">
+            <div class="cert-item" data-badge="04" data-aos="fade-up">
                 <div class="cert-info">
                     <div class="cert-date">January 2024</div>
                     <h3 class="cert-title">Deep Learning</h3>
@@ -289,7 +293,7 @@
                 </div>
             </div>
 
-            <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-item" data-badge="05" data-aos="fade-up" data-aos-delay="100">
                 <div class="cert-info">
                     <div class="cert-date">December 2023</div>
                     <h3 class="cert-title">Digital Design with Verilog</h3>
@@ -312,19 +316,13 @@
             
             
         </div>
-    </div>
+    </main>
 
     <a href="../index.html" class="back-btn" data-aos="fade-up">
         <i class="fas fa-home"></i>
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 </html> 
